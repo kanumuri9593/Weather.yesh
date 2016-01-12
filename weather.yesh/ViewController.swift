@@ -10,6 +10,7 @@ import UIKit
 
 
 
+
 class ViewController: UIViewController {
     
     
@@ -38,18 +39,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var sunsetLbl: UILabel!
     
     
-    
+    var weather :Weather!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateUI() {
+    
+    CityLbl.text = searchBar.text
+        let temp = weather.temp 
+        tempLbl.text = "\(temp)°"
+        climateConditionLbl.text = weather.Description
+        pressureLbl.text = "\(weather.pressure)"
+            HumidityLbl.text = "\(weather.humidity)%"
+        WindDegLbl.text = "\(weather.windDirection)"
+            WindSpeedLbl.text = "\(weather.windSpeed)mph"
+        sunriseLbl.text = weather.sunrise
+        sunsetLbl.text = weather.sunset
+        HighTempLbl.text = "\(weather.tmax)°"
+        LowTempLbl.text = "\(weather.tmin)°"
+        cloudLbl.text = "\(weather.cloudPercent)%"
+        
+    
+    
+    
+    
     }
-
     
     @IBOutlet weak var searchButton: UIStackView!
     
@@ -57,12 +76,39 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchButn(sender: AnyObject) {
+        
+        buttonclicked()
     }
     
     
     
     
+    func buttonclicked () {
     
+    var cityname = searchBar.text
+        
+        let fullname = cityname!.stringByReplacingOccurrencesOfString(" ", withString: "%20", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
+        print(fullname)
+        
+        weather = Weather(city: fullname)
+        
+        print(searchBar.text)
+        
+         
+        
+        weather.downloadweather { () -> () in
+            
+            self.updateUI()
+            
+        }
+        
+    
+    
+    
+    
+    
+    }
     
     
     

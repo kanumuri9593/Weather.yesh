@@ -13,6 +13,7 @@
 		1201CCE01C4305F300EB40E0 /* weather_yesh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1201CCDE1C4305F300EB40E0 /* weather_yesh.xcdatamodeld */; };
 		1201CCE21C4305F300EB40E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1201CCE11C4305F300EB40E0 /* Assets.xcassets */; };
 		1201CCE51C4305F300EB40E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1201CCE31C4305F300EB40E0 /* LaunchScreen.storyboard */; };
+		1229C6451C4485A4008316E6 /* constnats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1229C6441C4485A4008316E6 /* constnats.swift */; };
 		12A8E3721C43677500569447 /* character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A8E3711C43677500569447 /* character.swift */; };
 		D54E8C2BE86FF5FC80F31A09 /* Pods_weather_yesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519195D70803A7B7109061EE /* Pods_weather_yesh.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		1201CCE11C4305F300EB40E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1201CCE41C4305F300EB40E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1201CCE61C4305F300EB40E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1229C6441C4485A4008316E6 /* constnats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = constnats.swift; path = ../constnats.swift; sourceTree = "<group>"; };
 		12A8E3711C43677500569447 /* character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = character.swift; sourceTree = "<group>"; };
 		519195D70803A7B7109061EE /* Pods_weather_yesh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather_yesh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6D47B70A8ADC3F7BC2790C /* Pods-weather.yesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weather.yesh.release.xcconfig"; path = "Pods/Target Support Files/Pods-weather.yesh/Pods-weather.yesh.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				1201CCD71C4305F300EB40E0 /* AppDelegate.swift */,
+				1229C6441C4485A4008316E6 /* constnats.swift */,
 				1201CCD91C4305F300EB40E0 /* ViewController.swift */,
 				1201CCDB1C4305F300EB40E0 /* Main.storyboard */,
 				1201CCE11C4305F300EB40E0 /* Assets.xcassets */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1201CCDA1C4305F300EB40E0 /* ViewController.swift in Sources */,
+				1229C6451C4485A4008316E6 /* constnats.swift in Sources */,
 				1201CCD81C4305F300EB40E0 /* AppDelegate.swift in Sources */,
 				1201CCE01C4305F300EB40E0 /* weather_yesh.xcdatamodeld in Sources */,
 				12A8E3721C43677500569447 /* character.swift in Sources */,
